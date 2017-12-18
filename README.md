@@ -4,15 +4,8 @@
 
 # FTPflow
 
-`FTPflow` is a Python package for optimally traversing extremely large FTP directory trees.  It constitutes the algorithmic heart of the [PubData](https://github.com/Bohdan-Khomtchouk/PubData) search engine.  FTPflow creates a dictionary formatted as a JSON file in the user’s home directory containing all the full paths as keys and the respective filenames as values.  FTPflow is designed with speed in mind by utilizing state-of-the-art high performance parallelism and concurrency algorithms to traverse FTP directory trees.  The resultant hash table (i.e., dictionary) supports fast lookup for any file in any biological database.
-
-
-## Funding
-
-`FTPflow` is financially supported by the United States Department of Defense (DoD) through the National Defense Science and Engineering Graduate Fellowship (NDSEG) Program. This research was conducted with Government support under and awarded by DoD, Army Research Office (ARO), National Defense Science and Engineering Graduate (NDSEG) Fellowship, 32 CFR 168a.
+`FTPflow` is a Python package for optimally traversing extremely large FTP directory trees.  It constitutes the algorithmic heart of the [Airport](https://github.com/airportbio/airport-web) search engine.  FTPflow creates a dictionary formatted as a JSON file in the user’s home directory containing all the full paths as keys and the respective filenames as values.  FTPflow is designed with speed in mind by utilizing state-of-the-art high performance parallelism and concurrency algorithms to traverse FTP directory trees.  The resultant hash table (i.e., dictionary) supports fast lookup for any file in any biological database.
 
 ## Screenshots
 
 <img width="496" alt="morpheus_walk" src="https://cloud.githubusercontent.com/assets/9893806/23974988/c4ec5264-09b4-11e7-8503-255ec7a04111.png">
-
-<img width="495" alt="screen shot 2016-09-05 at 2 24 14 pm" src="https://cloud.githubusercontent.com/assets/9893806/18255169/893a6ffc-7374-11e6-99fa-4569fc247629.png">
