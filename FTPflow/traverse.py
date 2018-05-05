@@ -74,7 +74,7 @@ class Run(object):
         print ("Find leading...")
         conn = ftplib.FTP(self.server_url)
         conn.login()
-        fw = walker.ftp_walker(conn)
+        fw = walker.FTP_flow(conn)
         dirs, files = fw.listdir(top)
         return files, dirs
         conn.quit()
@@ -101,7 +101,7 @@ class Run(object):
             print ("Couldn't create the connections for thread {}".format(exp))
         else:
             # file_names = listdir(self.server_path)
-            fw = walker.ftp_walker(connection, self.resume)
+            fw = walker.FTP_flow(connection, self.resume)
             if self.resume:
                 walker_obj = fw.walk_resume(_path, self.root)
                 next(walker_obj)
